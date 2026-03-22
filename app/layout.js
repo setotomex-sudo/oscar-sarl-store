@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-      </body>
+      <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script><script src="https://files.bpcontent.cloud/2026/03/22/19/20260322190517-7DCR461T.js" defer></script></body>
     </html>
   );
 }
