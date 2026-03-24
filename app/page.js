@@ -162,7 +162,7 @@ export default function Home() {
     <WishlistProvider>
       <div className="min-h-screen bg-black text-white">
         {/* Navbar */}
-        <header className="fixed top-0 left-0 right-0 z-40 bg-black">
+        <header className="fixed top-0 left-0 right-0 z-40 bg-black/30 backdrop-blur-sm">
           <div className="h-14 border-b border-white/10">
             <nav className="h-full max-w-6xl mx-auto px-4 flex items-center">
               <div className="w-full flex items-center justify-end gap-8 text-xs uppercase tracking-[0.25em] text-white">
@@ -177,7 +177,7 @@ export default function Home() {
 
         <main id="top" className="relative z-10">
           {/* Hero */}
-          <section className="relative h-screen bg-black">
+          <section className="relative h-screen bg-black" style={{backgroundImage: "url('/images/hero-bg.png')", backgroundSize: "cover", backgroundPosition: "center"}}>
             <div className="fixed top-0 left-0 w-screen h-[50vh] overflow-hidden z-30 pointer-events-none px-[2vw]">
               <h1
                 className="font-black text-[23vw] leading-none text-white whitespace-nowrap w-[100vw]"
@@ -186,7 +186,7 @@ export default function Home() {
                 OSCAR
               </h1>
             </div>
-            <div className="absolute left-0 right-0 bottom-0 h-[45vh] px-1">
+            <div className="absolute left-0 right-0 bottom-0 h-[55vh] px-1">
               <div className="h-full flex gap-[4px]">
                 {heroImageError.hero1 ? (
                   <div className="w-[33.33vw] h-full bg-[#E61A1A] flex items-center justify-center text-white font-semibold uppercase tracking-[0.25em]">Jouets</div>
